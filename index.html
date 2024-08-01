@@ -198,17 +198,36 @@
 		</div>
 	</div>
 
-	<div id="map" style="width:500px;height:400px;"></div>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7a2eefd8dd900be74cb3cd0a71a24165"></script>
-	<script>
-		var container = document.getElementById('map');
-		var options = {
-			center: new kakao.maps.LatLng(37.4127324, 127.1278592),
-			level: 3
-		};
+	<div id="fh5co-event" class="fh5co-bg">
+                <div class="overlay"></div>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                                        <span>오시는길</span>
+                                        <h2>Location</h2>
 
-		var map = new kakao.maps.Map(container, options);
-	</script>
+					<div id="map" style="width:500px;height:400px;"></div>
+					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7a2eefd8dd900be74cb3cd0a71a24165"></script>
+					<script>
+						var container = document.getElementById('map');
+						var options = {
+							center: new kakao.maps.LatLng(37.4127324, 127.1278592),
+							level: 3
+						};
+
+						var map = new kakao.maps.Map(container, options);
+						var markerPosition  = new kakao.maps.LatLng(37.4127324, 127.1278592); 
+						var marker = new kakao.maps.Marker({
+    							position: markerPosition
+						});
+
+						marker.setMap(map);
+					</script>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<div id="fh5co-gallery" class="fh5co-section-gray">
