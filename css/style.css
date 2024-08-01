@@ -1316,7 +1316,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .feature-left .feature-copy {
-    width: 70%;
+    width: 40%;
     float: left;
   }
 }
