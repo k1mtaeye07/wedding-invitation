@@ -208,7 +208,56 @@
     							position: markerPosition
 						});
 
-						marker.setMap(map);
+
+						var content = '<div class="body" data-id="body">' + 
+	        							'<button type="button" data-id="min" class="img_tooltip ico_min HIDDEN">축소하기</button>' +
+								        '<button type="button" data-id="close" class="img_tooltip ico_close">닫기</button>' + 
+									'<div class="head_tooltip">' + 
+										'<strong class="placename"><a href="https://place.map.kakao.com/8887249" target="_blank" data-id="name" class="name" title="W힐스컨벤션">W힐스컨벤션</a></strong>' + 
+										'<a href="#none" target="_blank" data-id="detail" class="detail">상세보기<span class="img_tooltip coach_detail"></span></a>' + 
+									'</div>' + 
+									'<div class="metadata">' + 
+										'<strong class="screen_out">별점</strong>' + 
+											'<em data-id="score">5.0</em>' + 
+											'<span class="ICON-stars"><span data-id="stars" style="width: 100%;"></span></span>' + 
+											'<a href="https://place.map.kakao.com/8887249#comment" target="_blank" data-id="vote">(<span class="num">3</span>건)</a>' + 
+											'<span class="sep"></span>' + 
+											'<a href="https://place.map.kakao.com/8887249#review" target="_blank" data-id="review">리뷰 <span class="num">150</span></a>' + 
+									'</div>' + 
+									'<div class="content">' + 
+										'<a href="#none" data-id="placeimg" class="thumb_place"><img class="placeimg" src="//t1.daumcdn.net/thumb/C84x76/?fname=http://t1.daumcdn.net/cfile/2466694F5372F15F38">' + 
+										'<span class="frame_g"></span>' + 
+										'</a>' + 
+										'<div class="content_place">' + 
+											'<p data-id="address" class="address" title="경기 성남시 분당구 성남대로925번길 16 지하1층">경기 성남시 분당구 성남대로925번길 16 지하1층</p>' + 
+											'<p data-id="addInfoAddr" class="addInfoAddr"><span class="zipcode">(우) 13497</span>(지번) 야탑동 341</p>' + 
+											'<p data-id="contact" class="contact">' + 
+												'<span data-id="phone" class="phone">031-725-2000</span>' + 
+											'</p>' + 
+											'<p class="service">' + 
+												'<a href="#none" target="_blank" class="detail">상세보기</a>' + 
+											'</p>' + 
+										'</div>' + 
+									'</div>' + 
+								'</div>';
+
+						//marker.setMap(map);
+
+						var overlay = new kakao.maps.CustomOverlay({
+							content: content,
+							map: map,
+							position: marker.getPosition()
+						});
+
+						kakao.maps.event.addListener(marker, 'click', function() {
+							overlay.setMap(map);
+						});
+
+						function closeOverlay() {
+						    overlay.setMap(null);
+						}
+
+
 					</script>
 			</div>
 		</div>
