@@ -1224,7 +1224,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 100px;
   height: 100px;
 }
@@ -1312,7 +1312,7 @@ form label {
 }
 .feature-left .feature-copy {
   float: left;
-  width: 80%;
+  width: 43%;
 }
 @media screen and (max-width: 768px) {
   .feature-left .feature-copy {
