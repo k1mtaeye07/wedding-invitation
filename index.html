@@ -203,43 +203,31 @@
 						};
 
 						var map = new kakao.maps.Map(container, options);
-						var markerPosition  = new kakao.maps.LatLng(37.4134414858258, 127.12790667762572);
+
 						var marker = new kakao.maps.Marker({
-    							position: markerPosition
+							map: map
+    							position: new kakao.maps.LatLng(37.4134414858258, 127.12790667762572);
 						});
 
+						var content = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            카카오 스페이스닷원' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="img">' +
+            '                <img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/thumnail.png" width="73" height="70">' +
+            '           </div>' + 
+            '            <div class="desc">' + 
+            '                <div class="ellipsis">제주특별자치도 제주시 첨단로 242</div>' + 
+            '                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>' + 
+            '                <div><a href="https://www.kakaocorp.com/main" target="_blank" class="link">홈페이지</a></div>' + 
+            '            </div>' + 
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
 
-						var content = '<div class="body" data-id="body">' + 
-	        							'<button type="button" data-id="min" class="img_tooltip ico_min HIDDEN">축소하기</button>' +
-								        '<button type="button" data-id="close" class="img_tooltip ico_close">닫기</button>' + 
-									'<div class="head_tooltip">' + 
-										'<strong class="placename"><a href="https://place.map.kakao.com/8887249" target="_blank" data-id="name" class="name" title="W힐스컨벤션">W힐스컨벤션</a></strong>' + 
-										'<a href="#none" target="_blank" data-id="detail" class="detail">상세보기<span class="img_tooltip coach_detail"></span></a>' + 
-									'</div>' + 
-									'<div class="metadata">' + 
-										'<strong class="screen_out">별점</strong>' + 
-											'<em data-id="score">5.0</em>' + 
-											'<span class="ICON-stars"><span data-id="stars" style="width: 100%;"></span></span>' + 
-											'<a href="https://place.map.kakao.com/8887249#comment" target="_blank" data-id="vote">(<span class="num">3</span>건)</a>' + 
-											'<span class="sep"></span>' + 
-											'<a href="https://place.map.kakao.com/8887249#review" target="_blank" data-id="review">리뷰 <span class="num">150</span></a>' + 
-									'</div>' + 
-									'<div class="content">' + 
-										'<a href="#none" data-id="placeimg" class="thumb_place"><img class="placeimg" src="//t1.daumcdn.net/thumb/C84x76/?fname=http://t1.daumcdn.net/cfile/2466694F5372F15F38">' + 
-										'<span class="frame_g"></span>' + 
-										'</a>' + 
-										'<div class="content_place">' + 
-											'<p data-id="address" class="address" title="경기 성남시 분당구 성남대로925번길 16 지하1층">경기 성남시 분당구 성남대로925번길 16 지하1층</p>' + 
-											'<p data-id="addInfoAddr" class="addInfoAddr"><span class="zipcode">(우) 13497</span>(지번) 야탑동 341</p>' + 
-											'<p data-id="contact" class="contact">' + 
-												'<span data-id="phone" class="phone">031-725-2000</span>' + 
-											'</p>' + 
-											'<p class="service">' + 
-												'<a href="#none" target="_blank" class="detail">상세보기</a>' + 
-											'</p>' + 
-										'</div>' + 
-									'</div>' + 
-								'</div>';
 
 						//marker.setMap(map);
 
