@@ -59,7 +59,7 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
@@ -877,11 +877,11 @@ form label {
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
-  padding: 15px 20px;
+  padding: 8px 13px;
   background: #fff !important;
   color: #7e7e7e;
   border: none !important;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
 }
 #fh5co-header .display-tc .btn:hover,
@@ -897,7 +897,7 @@ form label {
   text-align: center;
 }
 #fh5co-counter .counter {
-  font-size: 50px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
   font-weight: 100;
@@ -1648,7 +1648,7 @@ form label {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Work Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1728,9 +1728,9 @@ form label {
 }
 
 .btn-warning {
-  background: #f0ad4e;
+  background: #FABE00;
   color: #fff;
-  border: 2px solid #f0ad4e;
+  border: 2px solid #FABE00;
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active {
   background: #eea236 !important;
@@ -1738,11 +1738,11 @@ form label {
 }
 .btn-warning.btn-outline {
   background: transparent;
-  color: #f0ad4e;
-  border: 2px solid #f0ad4e;
+  color: #FABE00;
+  border: 2px solid #FABE00;
 }
 .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
-  background: #f0ad4e;
+  background: #FABE00;
   color: #fff;
 }
 

@@ -1160,7 +1160,7 @@ pre code {
   }
 
   .col-sm-6 {
-    width: 100%;
+    width: 50%;
   }
 
   .col-sm-7 {
@@ -1369,7 +1369,7 @@ pre code {
   }
 
   .col-md-6 {
-    width: 100%;
+    width: 50%;
   }
 
   .col-md-7 {
@@ -2629,29 +2629,29 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: #fff;
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
 }
 .btn-default:focus, .btn-default.focus {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  color: #fff;
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
 }
 .btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
 }
 .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-  color: #333;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
+  color: #fff;
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
