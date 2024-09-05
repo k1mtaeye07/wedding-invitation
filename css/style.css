@@ -11,7 +11,8 @@
 *
 * ======================================================= */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  /*font-family: "Work Sans", Arial, sans-serif;*/
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -64,7 +65,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -99,7 +100,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
   line-height: 40px;
@@ -900,13 +901,13 @@ form label {
   font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
-  font-weight: 100;
+  font-weight: 400;
   display: block;
 }
 #fh5co-counter .counter-label {
   margin-bottom: 0;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
   letter-spacing: .1em;
 }
 @media screen and (max-width: 768px) {
@@ -915,8 +916,8 @@ form label {
   }
 }
 #fh5co-counter .icon {
-  width: 70px;
-  height: 70px;
+  width: 67px;
+  height: 67px;
   text-align: center;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
@@ -924,12 +925,12 @@ form label {
   margin-bottom: 30px;
 }
 #fh5co-counter .icon i {
-  height: 70px;
+  height: 67px;
 }
 #fh5co-counter .icon i:before {
   display: block;
   text-align: center;
-  margin-left: 3px;
+  margin-left: 0px;
 }
 
 .simply-countdown {
@@ -1157,7 +1158,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   height: 90px;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 40px;
   color: #7e7e7e;
 }
@@ -1231,6 +1232,7 @@ form label {
 #fh5co-testimonial .wrap-testimony .testimony-slide figure img {
   width: 100px;
   height: 100px;
+  margin: 15px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1252,7 +1254,7 @@ form label {
   }
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
-  font-style: italic;
+  font-style: normal;
   color: #8f989f;
   font-size: 20px;
   line-height: 1.6em;
