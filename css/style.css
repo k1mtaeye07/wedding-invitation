@@ -1677,6 +1677,7 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s;
   padding: 8px 20px;
+  background: rgb(255 255 255 / 75%);
 }
 .btn.btn-md {
   padding: 8px 20px !important;
