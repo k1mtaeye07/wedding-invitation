@@ -99,7 +99,7 @@
                 days: createCountdownElt(countdown, parameters, 'simply-days-section'),
                 hours: createCountdownElt(countdown, parameters, 'simply-hours-section'),
                 minutes: createCountdownElt(countdown, parameters, 'simply-minutes-section'),
-                //seconds: createCountdownElt(countdown, parameters, 'simply-seconds-section')
+                seconds: createCountdownElt(countdown, parameters, 'simply-seconds-section')
             };
         }
 
@@ -115,9 +115,9 @@
      */
     simplyCountdown = function (elt, args) {
         var parameters = extend({
-                year: 2024,
-                month: 12,
-                day: 14,
+                year: 2025,
+                month: 0,
+                day: 4,
                 hours: 12,
                 minutes: 0,
                 seconds: 0,
@@ -125,12 +125,12 @@
                     days: '일',
                     hours: '시간',
                     minutes: '분',
-                    seconds: 'second',
+                    seconds: '초',
                     pluralLetter: ''
                 },
                 plural: true,
                 inline: false,
-                enableUtc: true,
+                enableUtc: false,
                 onEnd: function () {
                     return;
                 },
